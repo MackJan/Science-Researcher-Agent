@@ -13,6 +13,7 @@ class Settings(BaseSettings):
 
     data_dir: Path = Path("data")
     log_level: str = "INFO"
+    database_url: str = "postgresql+psycopg://research:research@localhost:5432/research"
 
 
 @lru_cache
